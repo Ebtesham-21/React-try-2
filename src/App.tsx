@@ -3,6 +3,7 @@ import ListGroup from "./components/ListGroup";
 import ButtonBoot from "./components/ButtonBoot";
 import Button from "./components/Button";
 import { useState } from "react";
+import Like from "./components/Like";
 
 function App() {
   let items = ["Dhaka", "kg", "Sylhet", "Habiganj"];
@@ -16,6 +17,14 @@ function App() {
   //   setShowAlert((prevShowAlert) => !prevShowAlert);
   // };
   return (
+    <>
+      {/* <ListGroup
+        items={items}
+        heading="Cities"
+        onSelectItem={handleSelectItem}
+      /> */}
+      <Like />
+    </>
     // <div>
     //   {showAlert && (
     //     <Alert>
@@ -27,7 +36,6 @@ function App() {
     //     Click
     //   </Button>
     // </div>
-    <ListGroup items={items} heading="Cities" onSelectItem={handleSelectItem} />
   );
 }
 
